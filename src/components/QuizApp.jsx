@@ -103,7 +103,7 @@ const QuizApp = () => {
       </style>
       <div className="absolute inset-0">
         <div
-          className="absolute inset-0 bg-center bg-center"
+          className="absolute inset-0 bg-center"
           style={{
             backgroundImage: `url('/bg.jpeg')`,
             animation: "backgroundAnimation 60s linear infinite",
@@ -119,7 +119,7 @@ const QuizApp = () => {
           </h1>
         </header>
         {showCongrats ? (
-          <CongratsPage />
+          <CongratsPage score={score} />
         ) : quizOver ? (
           <div className="max-w-md mx-auto my-8 p-6 bg-red-100 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold text-red-800 mb-4">
